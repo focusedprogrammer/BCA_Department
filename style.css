@@ -1,0 +1,71 @@
+body{
+    background-color: rgb(19, 16, 16);
+}
+#container{
+    /* border: 2px solid; */
+    width: 400px;
+    height: 400px;
+    margin-top: 100px;
+    border-radius: 10px;
+    position: relative;
+    overflow: hidden;
+    padding: 8px;
+  
+}
+.box{
+    height: 100%;
+    width: 100%;
+    border: 2px solid;
+    border-radius: 10px;
+    position: relative;
+    z-index: 99;
+    background-color: rgb(168, 196, 219);
+    
+}
+.container::after{
+    content: "";
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50% ) rotate(45deg);
+    height: 600px;
+    width: 200px;
+    background-color: rgb(17, 211, 11);
+    animation: move 1.5s infinite;
+    
+}
+
+@keyframes move {
+    100%{
+        transform: translate(-50%,-50% ) rotate(225deg);
+    }
+    
+}
+form{
+    display: flex;
+    flex-direction: column;
+    padding: 15px 15px;
+    font-size: 20px;
+    margin: 10px;
+  
+}
+h1{
+    display: flex;
+    justify-content: center;
+    padding:10px;
+}
+input{
+    border-radius: 5px;
+    /* margin: 50px; */
+    
+}
+.btn{
+    float: right;
+    margin: 6%;
+}
+.container-fluid a{
+    font-size: 20px;
+}
+
+
+

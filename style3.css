@@ -1,0 +1,52 @@
+body{
+    background-color: antiquewhite;
+}
+
+.carousel-caption {
+    animation: fadeInUp 1s ease-in-out;
+}
+
+@keyframes fadeInUp {
+    from {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+#carouselExampleCaptions {
+    max-height: 500px; /* Adjust this value as needed */
+    overflow: hidden;
+}
+
+.carousel-item img {
+    object-fit: cover;
+    width: 100%;
+    height: 100%;
+    max-height: 500px; /* Match this with the carousel max-height */
+    background-attachment: fixed;
+}
+
+img {
+    object-fit: cover; 
+    height: 350px; 
+}
+.main {
+    background-color: rgba(253, 171, 17, 0.897);
+    padding: 20px; 
+}
+.heading {
+    padding: 10px;
+    text-align: center;
+}
+.card {
+    background-color: yellow; 
+    box-shadow: 10px 10px 10px rgba(47, 79, 121, 0.644);
+}
+.container {
+    margin: 0 auto; 
+}
+
+
