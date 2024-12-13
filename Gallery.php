@@ -52,64 +52,87 @@
        
     <div class="container">
         <div class="section">
-            <h2>Saturday Activity</h2>
+            <h2>All Events</h2>
             <div class="gallery">
                 <div class="gallery-item">
-                    <img src="niceadmin/assets/college-pics/deepak sir.jpg" alt="Saturday Activity1">
+                    <img src="niceadmin/assets/college-pics/deepaksir.jpg" alt="Saturday Activity1">
                 </div>
                 <div class="gallery-item">
                     <img src="niceadmin/assets/college-pics/shivsir.jpg" alt="Saturday Activity 2">
                 </div>
                 <div class="gallery-item">
-                    <img src="niceadmin/assets/college-pics/ashish.jpg" alt="Saturday Activity 3">
+                    <img src="niceadmin/assets/college-pics/dineshsir.jpg" alt="Saturday Activity 3">
                 </div>
                 <div class="gallery-item">
-                    <img src="niceadmin/assets/college-pics/ashish.jpg" alt="Saturday Activity 3">
+                    <img src="niceadmin/assets/college-pics/vaibhavsir.jpg" alt="Saturday Activity 3">
                 </div>
                 <div class="gallery-item">
-                    <img src="niceadmin/assets/college-pics/ashish.jpg" alt="Saturday Activity 3">
-                </div>
-            </div>
-        </div>
-
-        <div class="section">
-            <h2>Fresher's Party</h2>
-            <div class="gallery">
-                <div class="gallery-item">
-                    <img src="niceadmin/assets/college-pics/alfa.jpg" alt="Fresher's Party 1">
+                    <img src="niceadmin/assets/college-pics/deepak sir.jpg" alt="Saturday Activity 3">
                 </div>
                 <div class="gallery-item">
-                    <img src="niceadmin/assets/college-pics/group.jpg" alt="Fresher's Party 2">
+                    <img src="niceadmin/assets/college-pics/holi.jpg" alt="Saturday Activity 3">
                 </div>
                 <div class="gallery-item">
-                    <img src="niceadmin/assets/college-pics/grass.jpg" alt="Fresher's Party 3">
+                    <img src="niceadmin/assets/college-pics/holi2.jpg" alt="Saturday Activity 3">
                 </div>
                 <div class="gallery-item">
-                    <img src="niceadmin/assets/college-pics/grass.jpg" alt="Fresher's Party 4">
+                    <img src="niceadmin/assets/college-pics/certificate.jpg" alt="Saturday Activity 3">
                 </div>
                 <div class="gallery-item">
-                    <img src="niceadmin/assets/college-pics/grass.jpg" alt="Fresher's Party 5">
-                </div>
-            </div>
-        </div>
-
-        <div class="section">
-            <h2>College Events</h2>
-            <div class="gallery">
-                <div class="gallery-item">
-                    <img src="niceadmin/assets/college-pics/alfa2.jpg" alt="College Events 1">
+                    <img src="niceadmin/assets/college-pics/foodfesti.jpg" alt="Saturday Activity 3">
                 </div>
                 <div class="gallery-item">
-                    <img src="niceadmin/assets/college-pics/alfa.jpg" alt="College Events 2">
+                    <img src="niceadmin/assets/college-pics/old.jpg" alt="Saturday Activity 3">
+                </div>
+         
+                <div class="gallery-item">
+                    <img src="niceadmin/assets/college-pics/holi3.jpg" alt="Fresher's Party 1">
                 </div>
                 <div class="gallery-item">
-                    <img src="niceadmin/assets/college-pics/ashish.jpg" alt="College Events3">
+                    <img src="niceadmin/assets/college-pics/old.jpg" alt="Fresher's Party 2">
                 </div>
                 <div class="gallery-item">
-                    <img src="niceadmin/assets/college-pics/ashish.jpg" alt="College Events 3">
+                    <img src="niceadmin/assets/college-pics/fresherparty.jpg" alt="Fresher's Party 3">
                 </div>
                 <div class="gallery-item">
-                    <img src="niceadmin/assets/college-pics/ashish.jpg" alt="College Events 3">
+                    <img src="niceadmin/assets/college-pics/fresher2.jpg" alt="Fresher's Party 4">
+                </div>
+                <div class="gallery-item">
+                    <img src="niceadmin/assets/college-pics/foodfesti.jpg" alt="Fresher's Party 5">
+                </div>
+                <div class="gallery-item">
+                    <img src="niceadmin/assets/college-pics/teacherday.jpg" alt="Fresher's Party 5">
+                </div>
+                <div class="gallery-item">
+                    <img src="niceadmin/assets/college-pics/teacherday2.jpg" alt="Fresher's Party 5">
+                </div>
+                <div class="gallery-item">
+                    <img src="niceadmin/assets/college-pics/yoga.jpg" alt="Fresher's Party 5">
+                </div>
+         
+                <div class="gallery-item">
+                    <img src="niceadmin/assets/college-pics/holi4.jpg" alt="College Events 1">
+                </div>
+                <div class="gallery-item">
+                    <img src="niceadmin/assets/college-pics/teacherday.jpg" alt="College Events 2">
+                </div>
+                <div class="gallery-item">
+                    <img src="niceadmin/assets/college-pics/teacherday2.jpg" alt="College Events3">
+                </div>
+                <div class="gallery-item">
+                    <img src="niceadmin/assets/college-pics/withaman.jpg" alt="College Events 3">
+                </div>
+                <div class="gallery-item">
+                    <img src="niceadmin/assets/college-pics/singal.jpg" alt="College Events 3">
+                </div>
+                <div class="gallery-item">
+                    <img src="niceadmin/assets/college-pics/yoga2.jpg" alt="College Events 3">
+                </div>
+                <div class="gallery-item">
+                    <img src="niceadmin/assets/college-pics/yoga3.jpg" alt="College Events 3">
+                </div>
+                <div class="gallery-item">
+                    <img src="niceadmin/assets/college-pics/teacherday2.jpg" alt="College Events 3">
                 </div>
             </div>
         </div>

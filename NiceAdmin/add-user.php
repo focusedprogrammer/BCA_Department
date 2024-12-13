@@ -21,7 +21,7 @@
 <body>
    <div class="main">
       <div class="heading"><h1>Add User</h1></div>
-      <form method = "post" action="php_demo.php" class = "form-control" enctype="multipart/form-data" >
+      <form method = "post" action="user-list.php" class = "form-control" enctype="multipart/form-data" >
           <label for="name">Name</label>
           <input type="text" class="form-control" name="name" placeholder="enter user name " required >
           <label for="email">E-mail</label>
@@ -31,20 +31,23 @@
           <label for="address">Address</label>
           <input type="text" class="form-control" name="address" placeholder="enter address " required >
           <label for="semester">Add Semester</label>
-          <select name="semester" id="select" >
-            <option value="semester">semester 1st</option>
-            <option value="semester">semester 2nd</option>
-            <option value="semester">semester 3rd</option>
-            <option value="semester">semester 4th</option>
-            <option value="semester">semester 5th</option>
-            <option value="semester">semester 6th</option>
-            
-          </select>
+          <?php 
+          include "config.php";
+            $sql = "SELECT *FROM studentclass";
+
+            $result = mysqli_query($conn,$sql) or die("Query failed");
+
+            if(mysqli_num_rows($result) > 0){
+              echo '<select name="semester" id="select" >';
+              while($row = mysqli_fetch_assoc($result)){
+                
+                echo "<option value='{$row['sid']}'>{$row['semester']}</option>";
+              }
+              echo "</select>";
+          }
+          ?>
           <label for="gender">Gender</label>
           <input type="text" class="form-control" name="gender" placeholder="enter Gender " required >
-          
-          <!-- <label for="fileupload">Select a file to upload</label>
-          <input type="file" name="fileupload" id="fileupload"> -->
           
        <div class="btn">
           <button onclick="showAlert()" >Add User</button>

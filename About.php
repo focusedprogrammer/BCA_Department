@@ -66,7 +66,7 @@
 <div class="container">
 
     <div class="teacher-profile">
-        <img src="niceadmin/assets/college-pics/ashish.jpg" alt="Teacher 1">
+        <img src="niceadmin/assets/college-pics/dineshsir.jpg" alt="Teacher 1">
         <div>
             <h2>Mr. Dinesh Kumar</h2>
             <p><strong>Position:</strong> .......</p>
@@ -75,7 +75,7 @@
     </div>
 
     <div class="teacher-profile">
-        <img src="niceadmin/assets/college-pics/deepak sir.jpg" alt="Teacher 2">
+        <img src="niceadmin/assets/college-pics/deepaksir.jpg" alt="Teacher 2">
         <div>
             <h2>Mr. Deepak Singh</h2>
             <p><strong>Position:</strong>  Professor of Mathematics</p>
@@ -93,7 +93,7 @@
     </div>
 
     <div class="teacher-profile">
-        <img src="niceadmin/assets/college-pics/ashish.jpg" alt="Teacher 4">
+        <img src="niceadmin/assets/college-pics/vaibhavsir.jpg" alt="Teacher 4">
         <div>
             <h2>Mr. Vaibhav Mishra</h2>
             <p><strong>Position:</strong> Associate Professor of Computer Science</p>

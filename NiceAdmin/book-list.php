@@ -73,7 +73,7 @@
                     <td><?php echo $row['ISBN']; ?></td>
                     <td><?php echo $row['publisher']; ?></td>
                     <td><?php echo $row['year_of_publication']; ?></td>
-                    <td><button type="button" onclick="showAlert()"><a href="#">Delete</a></button></td>
+                  <td><button type="button" onclick="showAlert()"><a href="delete-book-list.php?id=<?php echo $row['book_id']; ?>">Delete</a></button></td>
                 </tr>
                 <?php } ?>
             </tbody>

@@ -395,6 +395,12 @@
           <span>User list</span>
         </a>
       </li><!-- End Contact Page Nav -->
+      <li class="nav-item">
+        <a class="nav-link collapsed" href="upload_photo.php">
+          <i class="bi bi-camera"></i>
+          <span>Upload Photos</span>
+        </a>
+      </li><!-- End Contact Page Nav -->
     </ul>
 
   </aside><!-- End Sidebar-->
@@ -413,8 +419,6 @@
 
     <section class="section dashboard">
       <div class="row">
-
-            
             <!-- Revenue Card -->
             <div class="col-xxl-4 col-md-6">
               <div class="card info-card revenue-card">
@@ -436,9 +440,25 @@
                       <i class="bi bi-book"></i>
                     </div>
                     <div class="ps-3">
-                      <h6>10+</h6>
-                      <span class="text-success small pt-1 fw-bold">Add</span> <span class="text-muted small pt-2 ps-1">New Book</span>
+                    <?php
+                          include 'config.php';
+                          if (!$conn) {
+                              die("Connection failed: " . mysqli_connect_error());
+                          }
+                          $result = mysqli_query($conn, "SELECT COUNT(*) AS user_count FROM book_list");
 
+                          if ($result) {
+                             $row = mysqli_fetch_assoc($result);
+                              $user_count = $row['user_count'];
+                          } else {
+                              
+                              echo "Error: " . mysqli_error($conn);
+                              $user_count = 0; 
+                          }
+                          mysqli_close($conn);
+                      ?>
+                      <h6><?php echo $user_count; ?></h6>
+                      <span class="text-success small pt-1 fw-bold">Add</span> <span class="text-muted small pt-2 ps-1">New Book</span>
                     </div>
                   </div>
                 </div>
@@ -466,7 +486,7 @@
                       <i class="bi bi-person"></i>
                     </div>
                     <div class="ps-3">
-                      <h6>35</h6>
+                      <h6></h6>
                       <span class="text-success small pt-1 fw-bold">users</span> <span class="text-muted small pt-2 ps-1">resistered</span>
 
                     </div>
@@ -495,7 +515,7 @@
                       <i class="bi bi-book"></i>
                     </div>
                     <div class="ps-3">
-                      <h6>25</h6>
+                      <h6></h6>
                       <span class="text-success small pt-1 fw-bold">Books</span> <span class="text-muted small pt-2 ps-1"></span>
 
                     </div>
@@ -553,7 +573,25 @@
                       <i class="bi bi-list"></i>
                     </div>
                     <div class="ps-3">
-                      <h6>4</h6>
+                    <?php
+                          include 'config.php';
+                          if (!$conn) {
+                              die("Connection failed: " . mysqli_connect_error());
+                          }
+                          $result = mysqli_query($conn, "SELECT COUNT(*) AS user_count FROM book_issue");
+
+                          if ($result) {
+                             $row = mysqli_fetch_assoc($result);
+                              $user_count = $row['user_count'];
+                          } else {
+                              
+                              echo "Error: " . mysqli_error($conn);
+                              $user_count = 0; 
+                          }
+                          mysqli_close($conn);
+                      ?>
+                      
+                      <h6><?php echo $user_count; ?></h6>
                       <span class="text-success small pt-1 fw-bold">Book</span> <span class="text-muted small pt-2 ps-1">issued</span>
 
                     </div>
@@ -563,6 +601,7 @@
               </div>
             </div><!-- End Revenue Card -->
             <div class="col-xxl-4 col-md-6">
+
               <div class="card info-card revenue-card">
 
                 <div class="filter">
@@ -582,7 +621,21 @@
                       <i class="bi bi-person"></i>
                     </div>
                     <div class="ps-3">
-                      <h6>500+</h6>
+                    <?php
+                          include 'config.php';
+                          $result = mysqli_query($conn, "SELECT COUNT(*) AS user_count FROM user_list");
+
+                          if ($result) {
+                              $row = mysqli_fetch_assoc($result);
+                              $user_count = $row['user_count'];
+                          } else {
+                              
+                              echo "Error: " . mysqli_error($conn);
+                              $user_count = 0; 
+                          }
+                          mysqli_close($conn);
+                    ?>
+                      <h6><?php echo $user_count ?></h6>
                       <span class="text-success small pt-1 fw-bold">8%</span> <span class="text-muted small pt-2 ps-1">increase</span>
 
                     </div>
@@ -591,131 +644,19 @@
 
               </div>
             </div><!-- End Revenue Card -->
-
-            <!-- Customers Card -->
-            <!-- <div class="col-xxl-4 col-xl-12">
-
-              <div class="card info-card customers-card">
-
-                <div class="filter">
-                  <a class="icon" href="#" data-bs-toggle="dropdown"><i class="bi bi-three-dots"></i></a>
-                  <ul class="dropdown-menu dropdown-menu-end dropdown-menu-arrow">
-                    <li class="dropdown-header text-start">
-                      <h6>Filter</h6>
-                    </li> -->
-
-                    <!-- <li><a class="dropdown-item" href="#">Today</a></li>
-                    <li><a class="dropdown-item" href="#">This Month</a></li>
-                    <li><a class="dropdown-item" href="#">This Year</a></li> -->
-                  <!-- </ul>
-                </div>
-
-                <div class="card-body">
-                  <h5 class="card-title">Customers <span>| This Year</span></h5>
-
-                  <div class="d-flex align-items-center">
-                    <div class="card-icon rounded-circle d-flex align-items-center justify-content-center">
-                      <i class="bi bi-people"></i>
-                    </div>
-                    <div class="ps-3">
-                      <h6>1244</h6>
-                      <span class="text-danger small pt-1 fw-bold">12%</span> <span class="text-muted small pt-2 ps-1">decrease</span>
-
-                    </div>
-                  </div>
-
-                </div>
-              </div> -->
-
-            </div><!-- End Customers Card -->
+           </div><!-- End Customers Card -->
           
-            <!-- Recent Sales -->
+           
             <div class="col-12">
-              <div class="card recent-sales overflow-auto">
-
-                <div class="filter">
-                  <a class="icon" href="#" data-bs-toggle="dropdown"><i class="bi bi-three-dots"></i></a>
-                  <ul class="dropdown-menu dropdown-menu-end dropdown-menu-arrow">
-                    <li class="dropdown-header text-start">
-                      <h6>Filter</h6>
-                    </li>
-
-                    <li><a class="dropdown-item" href="#">Today</a></li>
-                    <li><a class="dropdown-item" href="#">This Month</a></li>
-                    <li><a class="dropdown-item" href="#">This Year</a></li>
-                  </ul>
-                </div>
-
-                <div class="card-body">
-                  <h5 class="card-title">Recent Sales <span>| Today</span></h5>
-
-                  <table class="table table-borderless datatable">
-                    <thead>
-                      <tr>
-                        <th scope="col">#</th>
-                        <th scope="col">Customer</th>
-                        <th scope="col">Product</th>
-                        <th scope="col">Price</th>
-                        <th scope="col">Status</th>
-                      </tr>
-                    </thead>
-                    <tbody>
-                      <tr>
-                        <th scope="row"><a href="#">#2457</a></th>
-                        <td>Brandon Jacob</td>
-                        <td><a href="#" class="text-primary">At praesentium minu</a></td>
-                        <td>$64</td>
-                        <td><span class="badge bg-success">Approved</span></td>
-                      </tr>
-                      <tr>
-                        <th scope="row"><a href="#">#2147</a></th>
-                        <td>Bridie Kessler</td>
-                        <td><a href="#" class="text-primary">Blanditiis dolor omnis similique</a></td>
-                        <td>$47</td>
-                        <td><span class="badge bg-warning">Pending</span></td>
-                      </tr>
-                      <tr>
-                        <th scope="row"><a href="#">#2049</a></th>
-                        <td>Ashleigh Langosh</td>
-                        <td><a href="#" class="text-primary">At recusandae consectetur</a></td>
-                        <td>$147</td>
-                        <td><span class="badge bg-success">Approved</span></td>
-                      </tr>
-                      <tr>
-                        <th scope="row"><a href="#">#2644</a></th>
-                        <td>Angus Grady</td>
-                        <td><a href="#" class="text-primar">Ut voluptatem id earum et</a></td>
-                        <td>$67</td>
-                        <td><span class="badge bg-danger">Rejected</span></td>
-                      </tr>
-                      <tr>
-                        <th scope="row"><a href="#">#2644</a></th>
-                        <td>Raheem Lehner</td>
-                        <td><a href="#" class="text-primary">Sunt similique distinctio</a></td>
-                        <td>$165</td>
-                        <td><span class="badge bg-success">Approved</span></td>
-                      </tr>
-                    </tbody>
-                  </table>
-
-                </div>
-
-              </div>
-            </div><!-- End Recent Sales -->
-
   </main><!-- End #main -->
 
   <!-- ======= Footer ======= -->
   <footer id="footer" class="footer">
     <div class="copyright">
-      &copy; Copyright <strong><span>NiceAdmin</span></strong>. All Rights Reserved
+      &copy; Copyright <strong><span>B.C.A</span></strong>. Department
     </div>
     <div class="credits">
-      <!-- All the links in the footer should remain intact. -->
-      <!-- You can delete the links only if you purchased the pro version. -->
-      <!-- Licensing information: https://bootstrapmade.com/license/ -->
-      <!-- Purchase the pro version with working PHP/AJAX contact form: https://bootstrapmade.com/nice-admin-bootstrap-admin-html-template/ -->
-      Designed by <a href="https://bootstrapmade.com/">BootstrapMade</a>
+      Designed by <a href="index.php"><strong><span>Ashish Maurya</span></strong></a>
     </div>
   </footer><!-- End Footer -->
 

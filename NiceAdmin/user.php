@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Book-Issued List</title>
+    <title>User List</title>
     <style>
         table {
             border-collapse: collapse;
@@ -59,6 +59,7 @@
                     <th>Address</th>
                     <th>Semester</th>
                     <th>Gender</th>
+                    <th>Action</th>
                 </tr>
             </thead>
             
@@ -74,6 +75,7 @@
                     <td><?php echo $row['address']; ?></td>
                     <td><?php echo $row['semester']; ?></td>
                     <td><?php echo $row['gender']; ?></td>
+                    <td><button type="button" onclick="showAlert()"><a href="delete-user-list.php?id=<?php echo $row['Id']; ?>">Delete</a></button></td>
                 </tr>
                 <?php } ?>
             </tbody>

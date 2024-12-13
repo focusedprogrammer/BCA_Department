@@ -3,14 +3,14 @@
 include 'config.php';
 
     $username = $_POST['username'];
-    $book_id = $_POST['book_id'];
+    $book_name = $_POST['book_name'];
     $issue_date = $_POST['issue_date'];
     $due_date = $_POST['due_date'];
    
     
 
     // SQL query to insert the data into the book_issue table
-    $sql = "INSERT INTO book_issue (username, book_id, issue_date, due_date) VALUES ('{$username}', '{$book_id}', '{$issue_date}', '{$due_date}')";
+    $sql = "INSERT INTO book_issue (username, book_name, issue_date, due_date) VALUES ('{$username}', '{$book_name}', '{$issue_date}', '{$due_date}')";
     echo $sql;
     
 

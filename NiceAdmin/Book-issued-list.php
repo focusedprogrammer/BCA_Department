@@ -54,7 +54,7 @@
                 <tr>
                     <th>Transaction Id</th>
                     <th>User Name</th>
-                    <th>Book Id</th>
+                    <th>Book Name</th>
                     <th>Issue Date</th>
                     <th>Due Date</th>
                     <th>Action</th>
@@ -68,7 +68,7 @@
                 <tr>
                     <td><?php echo $row['transaction_id']; ?></td>
                     <td><?php echo $row['username']; ?></td>
-                    <td><?php echo $row['book_id']; ?></td>
+                    <td><?php echo $row['book_name']; ?></td>
                     <td><?php echo $row['issue_date']; ?></td>
                     <td><?php echo $row['due_date']; ?></td>
                     <td><button type="button" onclick="showAlert()"><a href="return-book.php?id=<?php echo $row['transaction_id']; ?>">Return</a></button></td>

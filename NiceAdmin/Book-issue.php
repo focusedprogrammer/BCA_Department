@@ -15,8 +15,8 @@
         <form method = "POST" action="issued.php" >
             <label for="User name">User Name</label>
             <input type="text" class="form-control" name="username" placeholder="enter username " required >
-            <label for="Book id">Book id</label>
-            <input type="text" class="form-control" name="book_id" placeholder="enter Book id " required >
+            <label for="Book name">Book Name</label>
+            <input type="text" class="form-control" name="book_name" placeholder="enter Book Name" required >
             <label for="issue date"> issue Date </label>
             <input type="date" class="form-control" name="issue_date"  required >
             <label for="returning">Due date</label>

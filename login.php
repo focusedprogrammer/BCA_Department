@@ -30,18 +30,18 @@
                     $sql = "SELECT user_id, username FROM form WHERE username = '{$username}' AND password = '{$password}'";
                     $result = mysqli_query($conn, $sql) or die("Query Failed");
 
-                    // If a matching record is found
+                    
                     if(mysqli_num_rows($result) > 0){
                         session_start();
                         $row = mysqli_fetch_assoc($result);
                         $_SESSION["username"] = $row['username'];
                         $_SESSION["user_id"] = $row['user_id'];
 
-                        // Redirect to the specified page
-                        header("Location: http://localhost/loginpage/NiceAdmin/index.html");
-                        exit(); // Stop further script execution after redirection
+                      
+                        header("Location: http://localhost/loginpage/NiceAdmin/index.php");
+                        exit(); 
                     } else {
-                        echo '<div class="text-danger mt-3">Username and password are incorrect.</div>';
+                        echo '<div class="text-danger mt-3">Username or password are incorrect.</div>';
                     }
                 }
             ?>
